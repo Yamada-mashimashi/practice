@@ -1,0 +1,102 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+/* MathJax のフォントを指定 */
+.mjx-chtml {
+  font-family: "TeX", "Times New Roman", serif !important;
+}
+
+.c {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  float: left;
+  width: 72%;
+  padding: 0 4%;
+  background-color: beige;
+}
+
+.side {
+  width: 22%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: azure;
+}
+
+.theorem {
+  counter-increment: theorem;
+}
+
+.theorem::before {
+  content: "定理 " counter(theorem) ". ";
+  font-weight: bold;
+}
+
+.theorem > *:first-child {
+  display: inline; /*div.theoremの直下は絶対インライン*/
+}
+
+.theorem > .title + * {
+  display: inline; /*タイトルがあった場合，その次の要素もインライン*/
+}
+
+.theorem > .title::before {
+  content: "（"; /*お好み装飾*/
+}
+
+.theorem > .title::after {
+  content: "）"; /*お好み装飾*/
+}
+
+.def {
+  counter-increment: theorem;
+}
+
+.def::before {
+  content: "定義 " counter(theorem) ". ";
+  font-weight: bold;
+}
+
+.def > *:first-child {
+  display: inline; /*div.theoremの直下は絶対インライン*/
+}
+
+.def > .title + * {
+  display: inline; /*タイトルがあった場合，その次の要素もインライン*/
+}
+
+.def > .title::before {
+  content: "（"; /*お好み装飾*/
+}
+
+.def > .title::after {
+  content: "）"; /*お好み装飾*/
+}
+
+.lem {
+  counter-increment: theorem;
+}
+
+.lem::before {
+  content: "補題 " counter(theorem) ". ";
+  font-weight: bold;
+}
+
+.lem > *:first-child {
+  display: inline; /*div.theoremの直下は絶対インライン*/
+}
+
+.lem > .title + * {
+  display: inline; /*タイトルがあった場合，その次の要素もインライン*/
+}
+
+.lem > .title::before {
+  content: "（"; /*お好み装飾*/
+}
+
+.lem > .title::after {
+  content: "）"; /*お好み装飾*/
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+          chtml: {
+            displayAlign: "left",
+            fontURL:
+              "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/tex",
+          },
+          svg: {
+            fontCache: "global",
+          },
+        },
+      };
+    </script>
+    <style>
+      mjx-container {
+        margin: 0 !important;
+      }
+      mjx-container[display="true"] {
+        margin: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    練習
+    <div class="theorem">
+      <div class="title">オイラーの公式</div>
+      <p>
+        任意の実数 $\theta$ に対して $$e^{\theta i} = \cos\theta + i\sin\theta$$
+        が成り立つ．
+      </p>
+      <h2>$C^{\infty}$級関数</h2>
+    </div>
+    <div class="def">
+      <div class="title">近傍</div>
+      <p>
+        $\mathbb{R}^n$ の開集合 $U$ が点 $p$ の<b>近傍</b>である．
+        $\overset{\mathrm{def}}{\iff}$ 開集合 $U$ が点 $p$ を含む(つまり，$p$ が
+        $U$ の内点である．)
+      </p>
+    </div>
+    <div class="def">
+      <div class="title">星形</div>
+      <p>
+        $S$：$\mathrm{R}^n$ の部分集合，$p$：$S$ の点<br />
+        $S$ は点 $p$ に関して<b>星形</b>である．<br />
+        $\overset{\mathrm{def}}{\iff}$ $\forall x \in S$ に対して，$p$ と $x$
+        を結ぶ線分が $S$ に含まれる．
+      </p>
+    </div>
+    <div class="lem">
+      <div class="title">剰余項をもつ Tayler の定理</div>
+      <p>
+        $f \colon U \rightarrow \mathbb{R}^n $ を $C^{\infty}$ 級関数，$U$ は点
+        $p = (p^1,\ldots,p^n)$ に関して星形とする．<br />
+        この時，<br />
+        \begin{eqnarray} \exists g_1(x), &\ldots ,g_n(x) \in C^{\infty}(U)& \\
+        &\mathrm{s.t.} \, f(x) = f(p) + \displaystyle &\sum_{i=1}^{n} (x^i
+        -p^i)g_i(x)&,\, g_i(p) = \frac{\partial f}{\partial x^i}(p).
+        \end{eqnarray}
+      </p>
+    </div>
+  </body>
+  <a href="./index.html">目次に戻る</a>
+</html>
