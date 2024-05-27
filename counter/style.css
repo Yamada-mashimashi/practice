@@ -1,0 +1,37 @@
+body {
+  display: flex; /* 横並びにしてくれる */
+  justify-content: center; /* 子要素を中央揃え */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+#h1 {
+  position: absolute;
+}
+
+#dec,
+#inc,
+#reset {
+  color: #4d9bc1;
+  max-width: 350px;
+  font-weight: bold;
+  border: 2px solid #4d9bc1;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+#dec:hover,
+#inc:hover,
+#reset:hover {
+  color: #fff;
+  background: #4d9bc1;
+}

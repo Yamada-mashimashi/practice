@@ -2,13 +2,21 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>counter</title>
   </head>
   <body>
-    <h1 id="h1">0</h1>
-    <p>押してね</p>
-    <button id="inc">+</button>
-    <button id="reset">reset</button>
+    <div>
+      <p id="h1">0</p>
+    </div>
+    <p id="base">押してね</p>
+    <div class="wrapper">
+      <button id="dec">-</button>
+      <button id="inc">+</button>
+      <button id="reset">reset</button>
+    </div>
+    <input type="range" id="slider" min="1" max="10" step="1" />
+    <p>横方向に<span id="d"></span>pxで動きます</p>
     <br />
     <a href="../index.html">目次に戻る</a>
     <script src="counter.js"></script>
